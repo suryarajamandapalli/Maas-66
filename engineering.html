@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Fav Icon.ico" type="image/png">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAAS 66 | Infrastructure that Delivers</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">
+                    <!-- <span class="logo-maas">MAAS</span>
+                    <span class="logo-66">66</span> -->
+                    <img src="Assets\Logo.png" style="width:80px; height:60px;"> 
+                </span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <!-- Navigation Items -->
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="expertise.html" target="_blank" data-bs-toggle="dropdown">
+                            Expertise
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="construction.html">Construction</a></li>
+                            <li><a class="dropdown-item" href="telecom.html">Telecom</a></li>
+                            <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
+                            <li><a class="dropdown-item" href="maintenance.html">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" data-bs-toggle="dropdown">
+                            partnering
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Financial Reporting</a></li>
+                            <li><a class="dropdown-item" href="#">Investor News</a></li>
+                            <li><a class="dropdown-item" href="#">Events & Presentations</a></li>
+                            <li><a class="dropdown-item" href="#">Corporate Governance</a></li>
+                            <li><a class="dropdown-item" href="#">Information Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-search" id="searchToggle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Press Enter to Search">
+                <button class="search-close" id="searchClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search...">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Expertise <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="expertise-communications.html">Communications</a></li>
+                    <li><a href="expertise-energy.html">Energy Transition Solutions</a></li>
+                    <li><a href="expertise-evi.html">EVi</a></li>
+                    <li><a href="expertise-oil-gas.html">Oil & Gas</a></li>
+                    <li><a href="expertise-power-generation.html">Power Generation</a></li>
+                    <li><a href="expertise-power-delivery.html">Power Delivery</a></li>
+                    <li><a href="expertise-civil.html">Civil & Industrial</a></li>
+                    <li><a href="expertise-technology.html">Technology Deployment</a></li>
+                    <li><a href="expertise-water.html">Water & Sewer</a></li>
+                </ul>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="has-submenu">
+                <a href="#">About <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about-entities.html">Operating Entities</a></li>
+                    <li><a href="about-scholarship.html">Scholarship Program</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Investors <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="investors.html">Overview</a></li>
+                    <li><a href="investors-financial.html">Financial Reporting</a></li>
+                    <li><a href="investors-news.html">Investor News</a></li>
+                    <li><a href="investors-events.html">Events & Presentations</a></li>
+                    <li><a href="investors-governance.html">Corporate Governance</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Sustainability <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="sustainability-climate.html">Climate-Related Risk</a></li>
+                    <li><a href="sustainability-governance.html">Governance</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Fav Icon.ico" type="image/png">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+
+
+    
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: url('https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://images.ctfassets.net/wp1lcwdav1p1/4ymAp58h9oMbJkHeMDo1zs/0855c674de4d5eff28996709e7057bc4/Teamwork-in-construction-industry---two-engineers-working-together-on-construction-site-with-blueprints-and-plans-645373486.jpeg?w=1500&h=680&q=60&fit=fill&f=faces&fm=jpg&fl=progressive&auto=format%2Ccompress&dpr=2&w=1000');">
+        <div class="page-header-content">
+            <h1 class="page-title">Engineering</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Engineering</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="slide-label text-primary-blue">Engineering | Maas 66</span>
+                    <h2 class="section-title mt-2">Engineering Smarter Fiber Pathways for Tomorrow’s Networks</h2>
+
+                    <p class="text mb-4" style="color: black; font-size: 18px;">
+Fiber route planning is a critical part of our engineering workflow, ensuring every cable path is designed for maximum efficiency, safety, and long-term performance. Through detailed mapping, terrain analysis, and strategic evaluation, we create routes that reduce obstacles and support smooth deployment</p>
+                    <p class="text" style="color: black; font-size: 18px;">
+Our engineering team oversees every stage — from environmental assessments and utility coordination to right-of-way validations and digital route modeling. Whether for aerial, underground, or hybrid builds, we engineer pathways that support scalable network growth and reliable service delivery</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://cloudfrontgharpediabucket.gharpedia.com/uploads/2025/09/Electrical-Contracting-Services-01-0603020020.jpg" alt="MAAS 66 Team" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>  
+
+
+
+    
+<!-- Products / Services Tiles -->
+<section class="content-section bg-light" id="list-section">
+
+    <div class="container">
+
+
+        <div class="row">
+
+            <!-- Product 1 -->
+            <div class="col-lg-12 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://i2.wp.com/draftingod.com/wp-content/gallery/telecomm-plans-and-elevations/FOC_1.png" alt="Underground Fiber" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Fiber Route Planning</h3>
+                    <p class="info-card-desc">Fiber route planning ensures every cable path is designed for efficiency, safety, and long-term reliability. We analyze terrain, obstacles, utilities, and right-of-way requirements to create the most optimal route for fast, secure, and cost-effective fiber deployment</p>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://as-builtdrawings.co.uk/wp-content/uploads/2020/02/as-builtdrawings-14.jpg" alt="Fiber Splicing" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Complete Construction Drawings & As-Builts</h3>
+                    <p class="info-card-desc">
+We create detailed construction drawings and as-builts that map every route, structure, and field adjustment. Our documentation ensures accurate installation, full compliance, and a reliable record for future maintenance, expansion, and troubleshooting</p></div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://www.topconpositioning.com/content/dam/topconpositioning/products/heros/HybridPositioning_Velcon_F_20210501_0007_web_hero.jpg" alt="Network Design" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Field Surveys</h3>
+                    <p class="info-card-desc">
+Field surveys give a clear understanding of the project area, ensuring accurate planning and safe execution. We assess terrain, existing utilities, site conditions, and potential obstacles to deliver precise data that supports efficient construction and reliable network deployment</p></div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://o.quizlet.com/sBxZzx-.SkUXqHaSLvXKfA_b.jpg" alt="Equipment Installation" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Computer Aided Drafting</h3>
+                    <p class="info-card-desc">
+We create detailed project maps that outline routes, utilities, and infrastructure elements. Our mapping process helps teams plan accurately, avoid conflicts, and execute construction with confidence and precision </p></div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://avatars.mds.yandex.net/get-vertis-journal/4212087/civil-engineer-and-construction-worker-manager-holding-digital-tablet-and-blueprints-talking-and-planing-about-construction-site-cooperation-teamwork-concept_640221-156.jpg_1663356405303/orig" alt="Power Space" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Make Ready</h3>
+                    <p class="info-card-desc">
+We perform make ready work to prepare infrastructure for new installations. Our team adjusts existing attachments, corrects clearance issues, and brings everything into compliance so your project can move forward smoothly and safely</p></div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://avatars.mds.yandex.net/i?id=021f809c47492f4185a0b9f675cd352017a5eaaa-10878080-images-thumbs&n=13" alt="Splicing Activation" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Project Mapping</h3>
+                    <p class="info-card-desc">
+We map project routes, utilities, and infrastructure elements with precision. Our mapping process gives teams the clarity needed to plan efficiently, avoid delays, and execute construction with confidence</p>
+                </div>
+            </div>
+
+
+            <!-- Product 8 -->
+            <div class="col-lg-6 mb-4">
+                <div class="info-card fade-drop">
+                    <div class="info-card-img">
+                        <img src="https://img.buzzfeed.com/buzzfeed-static/static/2024-09/13/2/asset/02f8f03e5221/sub-buzz-824-1726193759-3.jpg" alt="Troubleshooting" class="img-fluid fixed-img">
+                    </div>
+                    <h3 class="info-card-title">Site Audits</h3>
+                    <p class="info-card-desc">
+Site audits provide a complete evaluation of existing infrastructure, equipment conditions, and site readiness. We document key details, identify risks, and ensure each location meets safety, structural, and engineering requirements before construction or upgrades begin</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Animation + Image Fix CSS -->
+    <style>
+        .info-card:hover{
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.318);
+            scale: 1.005;
+            transition: 0.3s ease;
+        }
+
+        /* Smooth fade + drop */
+        .container h3{
+            color: black;
+            padding-top: 15px;
+            border-top: 10px solid #125fb2 ;
+        }
+
+        .container p{
+            font-size: 18px;
+        }
+
+        .fade-drop {
+            opacity: 0;
+            transform: translateY(-25px);
+            transition: all 0.7s ease;
+        }
+        .fade-drop.animate-drop {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Fixed image height + full cover */
+        .fixed-img {
+            width: 100%;
+            height: 350px;       /* You can adjust this */
+            object-fit: cover;   /* Makes image cover entire area */
+            border-radius: 6px 6px 0 0;
+        }
+    </style>
+
+    <!-- Animation Trigger JS -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const cards = document.querySelectorAll(".fade-drop");
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("animate-drop");
+                    }
+                });
+            }, { threshold: 0.2 });
+
+            cards.forEach(card => observer.observe(card));
+        });
+    </script>
+
+</section>
+
+
+<!-- Leadership Section -->
+<section class="content-section py-5" id="leadership">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Leadership</h2>
+            <p class="text">Meet the Vision Behind MAAS 66</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-10">
+
+                <div class="card shadow-sm border-0">
+                    
+                    <!-- Responsive Image -->
+                    <img 
+                        src="Assets/ceo.png" 
+                        class="card-img-top img-fluid"
+                        alt="CEO"
+                        style="object-fit: cover; height: 380px;"
+                    >
+
+                    <div class="card-body text-center">
+                        <h4 class="fw-bold mb-1">Mir Zain</h4>
+                        <p class="text-primary fw-semibold mb-2">Chief Executive Officer</p>
+                        <p class="text fst-italic mb-0">
+                            “Leading Maas 66 with vision, precision, and purpose.”
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+    <!-- Footer - Matching the design -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo and Tagline -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <span class="footer-logo">
+                                 <img src="Assets\Logo.png" alt="MAAS 66 Logo" class="footer-logo-img" style="padding-right: 70px;" width="200px" height="200px">
+
+                            </span>
+                            <h1 style="color: white; padding-left: 20px;">Maas <span style="color: rgb(1, 83, 184);">66</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">EXPERTISE</h4>
+                        <ul class="footer-links">
+                            <li><a href="construction.html">Construction</a></li>
+                            <li><a href="telecom.html">Telecom</a></li>
+                            <li><a href="engineering.html">Engineering</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                            <li><a href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">COMPANY</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="investors.html">Investor Relations</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsibility Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">RESPONSIBILITY</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscribe -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="footer-title">SUBSCRIBE</h4>
+                        <form class="subscribe-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button type="submit" class="btn btn-subscribe">GO</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2026 Maas 66, Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-legal">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

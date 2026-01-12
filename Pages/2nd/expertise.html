@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Fav Icon.ico" type="image/png">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Expertise | MAAS 66 - Infrastructure Solutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">
+                    <span class="logo-maas">MAAS</span>
+                    <span class="logo-66">66</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"><span></span><span></span><span></span></span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="expertise.html" data-bs-toggle="dropdown">Expertise</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="expertise-communications.html">Communications</a></li>
+                            <li><a class="dropdown-item" href="expertise-energy.html">Energy Transition Solutions</a></li>
+                            <li><a class="dropdown-item" href="expertise-evi.html">EVi</a></li>
+                            <li><a class="dropdown-item" href="expertise-oil-gas.html">Oil & Gas</a></li>
+                            <li><a class="dropdown-item" href="expertise-power-generation.html">Power Generation</a></li>
+                            <li><a class="dropdown-item" href="expertise-power-delivery.html">Power Delivery</a></li>
+                            <li><a class="dropdown-item" href="expertise-civil.html">Civil & Industrial</a></li>
+                            <li><a class="dropdown-item" href="expertise-technology.html">Technology Deployment</a></li>
+                            <li><a class="dropdown-item" href="expertise-water.html">Water & Sewer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="about.html" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about-entities.html">Operating Entities</a></li>
+                            <li><a class="dropdown-item" href="about-scholarship.html">Scholarship Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Investors</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="investors.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="investors-financial.html">Financial Reporting</a></li>
+                            <li><a class="dropdown-item" href="investors-news.html">Investor News</a></li>
+                            <li><a class="dropdown-item" href="investors-events.html">Events & Presentations</a></li>
+                            <li><a class="dropdown-item" href="investors-governance.html">Corporate Governance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sustainability</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sustainability.html">Sustainability Report</a></li>
+                            <li><a class="dropdown-item" href="sustainability-climate.html">Climate-Related Financial Risk</a></li>
+                            <li><a class="dropdown-item" href="sustainability-governance.html">Sustainability Governance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-search" id="searchToggle" aria-label="Search"><i class="bi bi-search"></i></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-close" id="searchClose"><i class="bi bi-x-lg"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search..."><i class="bi bi-search"></i>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Expertise <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="expertise-communications.html">Communications</a></li>
+                    <li><a href="expertise-energy.html">Energy Transition Solutions</a></li>
+                    <li><a href="expertise-evi.html">EVi</a></li>
+                    <li><a href="expertise-oil-gas.html">Oil & Gas</a></li>
+                    <li><a href="expertise-power-generation.html">Power Generation</a></li>
+                    <li><a href="expertise-power-delivery.html">Power Delivery</a></li>
+                    <li><a href="expertise-civil.html">Civil & Industrial</a></li>
+                    <li><a href="expertise-technology.html">Technology Deployment</a></li>
+                    <li><a href="expertise-water.html">Water & Sewer</a></li>
+                </ul>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="has-submenu">
+                <a href="#">About <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about-entities.html">Operating Entities</a></li>
+                    <li><a href="about-scholarship.html">Scholarship Program</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Investors <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="investors.html">Overview</a></li>
+                    <li><a href="investors-financial.html">Financial Reporting</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Sustainability <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="sustainability-governance.html">Governance</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80');">
+        <div class="page-header-content">
+            <h1 class="page-title">Our Expertise</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Expertise</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Intro Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="slide-label text-primary-blue">INFRASTRUCTURE EXCELLENCE</span>
+                    <h2 class="section-title mt-2">Comprehensive Solutions for Every Challenge</h2>
+                    <p class="text-muted">
+                        MAAS 66 delivers end-to-end infrastructure solutions across multiple sectors. Our expertise spans communications, energy, utilities, and industrial projects, providing innovative solutions that power progress and connect communities.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Grid -->
+    <section class="content-section bg-light pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Communications">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Communications</h3>
+                            <p>Leading the digital transformation with advanced fiber optic and telecommunications infrastructure.</p>
+                            <a href="expertise-communications.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80" alt="Energy Transition">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Energy Transition Solutions</h3>
+                            <p>Supporting the global shift to renewable energy with innovative infrastructure development.</p>
+                            <a href="expertise-energy.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=600&q=80" alt="EVi">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>EVi</h3>
+                            <p>Electric Vehicle charging infrastructure solutions for residential, commercial, and fleet applications.</p>
+                            <a href="expertise-evi.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?w=600&q=80" alt="Oil & Gas">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Oil & Gas</h3>
+                            <p>Comprehensive pipeline infrastructure services supporting the energy sector nationwide.</p>
+                            <a href="expertise-oil-gas.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80" alt="Power Generation">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Power Generation</h3>
+                            <p>Building and maintaining power generation facilities that keep communities powered.</p>
+                            <a href="expertise-power-generation.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80" alt="Power Delivery">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Power Delivery</h3>
+                            <p>Transmission and distribution infrastructure ensuring reliable power across the grid.</p>
+                            <a href="expertise-power-delivery.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Civil & Industrial">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Civil & Industrial</h3>
+                            <p>Heavy civil construction and industrial infrastructure projects of any scale.</p>
+                            <a href="expertise-civil.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80" alt="Technology Deployment">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Technology Deployment</h3>
+                            <p>Installing and maintaining advanced technology systems for modern infrastructure.</p>
+                            <a href="expertise-technology.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="expertise-card">
+                        <div class="expertise-card-image">
+                            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Water & Sewer">
+                        </div>
+                        <div class="expertise-card-content">
+                            <h3>Water & Sewer</h3>
+                            <p>Turnkey solutions for water and sewer distribution and transmission systems.</p>
+                            <a href="expertise-water.html" class="expertise-link">
+                                <span>Learn More</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="content-section bg-primary-blue text-white text-center">
+        <div class="container">
+            <h2 class="mb-4">Ready to Start Your Project?</h2>
+            <p class="lead mb-4">Let's discuss how MAAS 66 can deliver the infrastructure solutions you need.</p>
+            <a href="contact.html" class="btn-safety">Contact Us Today</a>
+        </div>
+    </section>
+
+   
+    <!-- Footer - Matching the design -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo and Tagline -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <span class="footer-logo">
+                                 <img src="Assets\Logo.png" alt="MAAS 66 Logo" class="footer-logo-img" style="padding-right: 70px;" width="200px" height="200px">
+
+                            </span>
+                            <h1 style="color: white; padding-left: 20px;">Maas <span style="color: rgb(1, 83, 184);">66</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">EXPERTISE</h4>
+                        <ul class="footer-links">
+                            <li><a href="construction.html">Construction</a></li>
+                            <li><a href="telecom.html">Telecom</a></li>
+                            <li><a href="engineering.html">Engineering</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                            <li><a href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">COMPANY</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="investors.html">Investor Relations</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsibility Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">RESPONSIBILITY</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscribe -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="footer-title">SUBSCRIBE</h4>
+                        <form class="subscribe-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button type="submit" class="btn btn-subscribe">GO</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2026 Maas 66, Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-legal">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

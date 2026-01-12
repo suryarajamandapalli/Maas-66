@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Fav Icon.ico" type="image/png">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MAAS 66 - Infrastructure that Delivers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">
+                    <span class="logo-maas">MAAS</span>
+                    <span class="logo-66">66</span>
+                </span>
+            </a>
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="expertise.html" data-bs-toggle="dropdown">Expertise</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="expertise-communications.html">Communications</a></li>
+                            <li><a class="dropdown-item" href="expertise-energy.html">Energy Transition Solutions</a></li>
+                            <li><a class="dropdown-item" href="expertise-evi.html">EVi</a></li>
+                            <li><a class="dropdown-item" href="expertise-oil-gas.html">Oil & Gas</a></li>
+                            <li><a class="dropdown-item" href="expertise-power-generation.html">Power Generation</a></li>
+                            <li><a class="dropdown-item" href="expertise-power-delivery.html">Power Delivery</a></li>
+                            <li><a class="dropdown-item" href="expertise-civil.html">Civil & Industrial</a></li>
+                            <li><a class="dropdown-item" href="expertise-technology.html">Technology Deployment</a></li>
+                            <li><a class="dropdown-item" href="expertise-water.html">Water & Sewer</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="about.html" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">Our Story</a></li>
+                            <li><a class="dropdown-item" href="about-entities.html">Operating Entities</a></li>
+                            <li><a class="dropdown-item" href="about-scholarship.html">Scholarship Program</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Investors</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="investors.html">Overview</a></li>
+                            <li><a class="dropdown-item" href="investors-financial.html">Financial Reporting</a></li>
+                            <li><a class="dropdown-item" href="investors-news.html">Investor News</a></li>
+                            <li><a class="dropdown-item" href="investors-events.html">Events & Presentations</a></li>
+                            <li><a class="dropdown-item" href="investors-governance.html">Corporate Governance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Sustainability</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="sustainability.html">Sustainability Report</a></li>
+                            <li><a class="dropdown-item" href="sustainability-climate.html">Climate-Related Financial Risk</a></li>
+                            <li><a class="dropdown-item" href="sustainability-governance.html">Sustainability Governance</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
+                    <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-search" id="searchToggle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Search...">
+                <button class="search-close" id="searchClose"><i class="bi bi-x-lg"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebarClose"><i class="bi bi-x-lg"></i></button>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search...">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Expertise <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="expertise-communications.html">Communications</a></li>
+                    <li><a href="expertise-energy.html">Energy Transition Solutions</a></li>
+                    <li><a href="expertise-evi.html">EVi</a></li>
+                    <li><a href="expertise-oil-gas.html">Oil & Gas</a></li>
+                    <li><a href="expertise-power-generation.html">Power Generation</a></li>
+                    <li><a href="expertise-power-delivery.html">Power Delivery</a></li>
+                    <li><a href="expertise-civil.html">Civil & Industrial</a></li>
+                    <li><a href="expertise-technology.html">Technology Deployment</a></li>
+                    <li><a href="expertise-water.html">Water & Sewer</a></li>
+                </ul>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="has-submenu">
+                <a href="#">About <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about-entities.html">Operating Entities</a></li>
+                    <li><a href="about-scholarship.html">Scholarship Program</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Investors <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="investors.html">Overview</a></li>
+                    <li><a href="investors-financial.html">Financial Reporting</a></li>
+                    <li><a href="investors-news.html">Investor News</a></li>
+                    <li><a href="investors-events.html">Events & Presentations</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Sustainability <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="sustainability-climate.html">Climate-Related Risk</a></li>
+                    <li><a href="sustainability-governance.html">Governance</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- Page Header -->
+    <header class="page-header" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80');">
+        <div class="page-header-content">
+            <h1 class="page-title">About MAAS 66</h1>
+            <div class="page-breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>About Us</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Our Story Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <span class="slide-label text-primary-blue">OUR STORY</span>
+                    <h2 class="section-title mt-2">Building Tomorrow's Infrastructure Today</h2>
+                    <p class="lead text-muted mb-4">
+                        MAAS 66 is a leading infrastructure company specializing in underground fiber solutions and comprehensive utility services across North America.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Founded with a vision to revolutionize infrastructure development, we have grown into a trusted partner for telecommunications, energy, and utility companies nationwide. Our commitment to excellence, safety, and innovation has made us a leader in the industry.
+                    </p>
+                    <p class="text-muted">
+                        With decades of combined experience, our team delivers projects that connect communities, power economies, and build the foundation for future generations.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="MAAS 66 Team" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="content-section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="bi bi-bullseye"></i>
+                        </div>
+                        <h3 class="info-card-title">Our Mission</h3>
+                        <p class="info-card-desc">
+                            To deliver world-class infrastructure solutions that connect communities, power progress, and build a sustainable future for generations to come.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <h3 class="info-card-title">Our Vision</h3>
+                        <p class="info-card-desc">
+                            To be the most trusted infrastructure partner, recognized for our innovation, safety excellence, and positive impact on the communities we serve.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="info-card">
+                        <div class="info-card-icon">
+                            <i class="bi bi-heart"></i>
+                        </div>
+                        <h3 class="info-card-title">Our Values</h3>
+                        <p class="info-card-desc">
+                            Safety first. Integrity always. Excellence in everything. These core values guide every decision we make and every project we undertake.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Section -->
+    <section class="content-section" id="leadership">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Our Leadership</h2>
+                <p class="section-subtitle">Meet the team driving MAAS 66 forward</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-member">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80" alt="CEO">
+                        </div>
+                        <h4 class="team-name">Mir Zain</h4>
+                        <p class="team-position">Chief Executive Officer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+   
+    <!-- Footer - Matching the design -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo and Tagline -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <span class="footer-logo">
+                                 <img src="Assets\Logo.png" alt="MAAS 66 Logo" class="footer-logo-img" style="padding-right: 70px;" width="200px" height="200px">
+
+                            </span>
+                            <h1 style="color: white; padding-left: 20px;">Maas <span style="color: rgb(1, 83, 184);">66</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">EXPERTISE</h4>
+                        <ul class="footer-links">
+                            <li><a href="construction.html">Construction</a></li>
+                            <li><a href="telecom.html">Telecom</a></li>
+                            <li><a href="engineering.html">Engineering</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                            <li><a href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">COMPANY</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="investors.html">Investor Relations</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsibility Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">RESPONSIBILITY</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscribe -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="footer-title">SUBSCRIBE</h4>
+                        <form class="subscribe-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button type="submit" class="btn btn-subscribe">GO</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2026 Maas 66, Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-legal">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>

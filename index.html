@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="Fav Icon.ico" type="image/png">
+    <link rel="icon" href="Fav Icon.ico" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAAS 66 | Infrastructure that Delivers</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container-fluid px-4 px-lg-5">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <span class="logo-text">
+                    <!-- <span class="logo-maas">MAAS</span>
+                    <span class="logo-66">66</span> -->
+                    <img src="Assets\Logo.png" style="width:80px; height:60px;"> 
+                </span>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" id="navbarToggler" aria-label="Toggle navigation">
+                <span class="toggler-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+            <!-- Navigation Items -->
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="expertise.html" target="_blank" data-bs-toggle="dropdown">
+                            Expertise
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="construction.html">Construction</a></li>
+                            <li><a class="dropdown-item" href="telecom.html">Telecom</a></li>
+                            <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
+                            <li><a class="dropdown-item" href="maintenance.html">Maintenance</a></li>
+                            <li><a class="dropdown-item" href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown" href="#" data-bs-toggle="dropdown">
+                            partnering
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Financial Reporting</a></li>
+                            <li><a class="dropdown-item" href="#">Investor News</a></li>
+                            <li><a class="dropdown-item" href="#">Events & Presentations</a></li>
+                            <li><a class="dropdown-item" href="#">Corporate Governance</a></li>
+                            <li><a class="dropdown-item" href="#">Information Request</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-search" id="searchToggle" aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Search Overlay -->
+        <div class="search-overlay" id="searchOverlay">
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Press Enter to Search">
+                <button class="search-close" id="searchClose">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div class="mobile-sidebar" id="mobileSidebar">
+        <div class="sidebar-header">
+            <button class="sidebar-close" id="sidebarClose">
+                <i class="bi bi-x-lg"></i>
+            </button>
+            <div class="sidebar-search">
+                <input type="text" placeholder="Search...">
+                <i class="bi bi-search"></i>
+            </div>
+        </div>
+        <ul class="sidebar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Expertise <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="expertise-communications.html">Communications</a></li>
+                    <li><a href="expertise-energy.html">Energy Transition Solutions</a></li>
+                    <li><a href="expertise-evi.html">EVi</a></li>
+                    <li><a href="expertise-oil-gas.html">Oil & Gas</a></li>
+                    <li><a href="expertise-power-generation.html">Power Generation</a></li>
+                    <li><a href="expertise-power-delivery.html">Power Delivery</a></li>
+                    <li><a href="expertise-civil.html">Civil & Industrial</a></li>
+                    <li><a href="expertise-technology.html">Technology Deployment</a></li>
+                    <li><a href="expertise-water.html">Water & Sewer</a></li>
+                </ul>
+            </li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="has-submenu">
+                <a href="#">About <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="about.html">Our Story</a></li>
+                    <li><a href="about-entities.html">Operating Entities</a></li>
+                    <li><a href="about-scholarship.html">Scholarship Program</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Investors <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="investors.html">Overview</a></li>
+                    <li><a href="investors-financial.html">Financial Reporting</a></li>
+                    <li><a href="investors-news.html">Investor News</a></li>
+                    <li><a href="investors-events.html">Events & Presentations</a></li>
+                    <li><a href="investors-governance.html">Corporate Governance</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Sustainability <i class="bi bi-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="sustainability.html">Sustainability Report</a></li>
+                    <li><a href="sustainability-climate.html">Climate-Related Risk</a></li>
+                    <li><a href="sustainability-governance.html">Governance</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+
+
+
+
+
+
+    
+    <!-- Hero Slider - Enhanced with better animations -->
+    <section class="hero-slider" id="heroSlider">
+        <div class="slider-wrapper">
+            <!-- Slide 1 -->
+
+            <!-- Slide 2 -->
+            <div class="slide" data-slide="1">
+                <div class="slide-bg" style="background-image: url('https://assets.telecomtv.com/assets/telecomtv/orange-concessions-13035.jpeg?w=1200');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row align-items-center min-vh-100">
+                            <div class="col-lg-7 col-md-10">
+                                <div class="slide-text">
+                                    <span class="slide-label">WE ARE EXPERTS IN</span>
+                                    <div class="slide-divider"></div>
+                                    <h1 class="slide-title">Construction</h1>
+                                    <p class="slide-description">Fast, reliable fiber and tower builds with trenching, installation, splicing, testing, and full network activation</p>
+                                    <a href="expertise-energy.html" class="btn-learn-more">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-vertical-text">
+                    <span>Maas</span>
+                    <span>66</span>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide" data-slide="2">
+                <div class="slide-bg" style="background-image: url('file:///C:/Users/surya/Videos/Rayden%20Important/img/Telecommunications.jpeg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row align-items-center min-vh-100">
+                            <div class="col-lg-7 col-md-10">
+                                <div class="slide-text">
+                                    <span class="slide-label">WE ARE EXPERTS IN</span>
+                                    <div class="slide-divider"></div>
+                                    <h1 class="slide-title">Telecom</h1>
+                                    <p class="slide-description">Robust telecom networks with fiber deployment, broadband expansion, wireless systems, and equipment setup</p>
+                                    <a href="expertise-power-delivery.html" class="btn-learn-more">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-vertical-text">
+                    <span>Maas</span>
+                    <span>66</span>
+                </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="slide" data-slide="3">
+                <div class="slide-bg" style="background-image: url('https://static.tildacdn.com/tild3430-3663-4463-b761-343666363839/__.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row align-items-center min-vh-100">
+                            <div class="col-lg-7 col-md-10">
+                                <div class="slide-text">
+                                    <span class="slide-label">WE ARE EXPERTS IN</span>
+                                    <div class="slide-divider"></div>
+                                    <h1 class="slide-title">Engineering</h1>
+                                    <p class="slide-description">Precise route planning, surveys, drawings, and CAD mapping for smooth and optimized project execution</p>
+                                    <a href="expertise-water.html" class="btn-learn-more">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-vertical-text">
+                    <span>Maas</span>
+                    <span>66</span>
+                </div>
+            </div>
+
+            <!-- Slide 5 - NEW -->
+            <div class="slide" data-slide="4">
+                <div class="slide-bg" style="background-image: url('https://www.opr.se/wp-content/uploads/2023/10/shutterstock_2267754339-1536x864.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row align-items-center min-vh-100">
+                            <div class="col-lg-7 col-md-10">
+                                <div class="slide-text">
+                                    <span class="slide-label">WE ARE EXPERTS IN</span>
+                                    <div class="slide-divider"></div>
+                                    <h1 class="slide-title">Maintenance</h1>
+                                    <p class="slide-description">24/7 restoration, pole work, repairs, and storm recovery to keep networks running without downtime</p>
+                                    <a href="expertise-oil-gas.html" class="btn-learn-more">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-vertical-text">
+                    <span>Maas</span>
+                    <span>66</span>
+                </div>
+            </div>
+
+                        <!-- Slide 5 - NEW -->
+            <div class="slide" data-slide="4">
+                <div class="slide-bg" style="background-image: url('https://brainsensei.com/wp-content/uploads/2022/11/Project-Execution-in-Project-Management-Process-1.jpg');"></div>
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row align-items-center min-vh-100">
+                            <div class="col-lg-7 col-md-10">
+                                <div class="slide-text">
+                                    <span class="slide-label">WE ARE EXPERTS IN</span>
+                                    <div class="slide-divider"></div>
+                                    <h1 class="slide-title">Project Management</h1>
+                                    <p class="slide-description">Complete lifecycle management with scheduling, coordination, inspections, materials, and progress reporting</p>
+                                    <a href="expertise-oil-gas.html" class="btn-learn-more">
+                                        LEARN MORE
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-vertical-text">
+                    <span>Maas</span>
+                    <span>66</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Slider Controls - Redesigned -->
+    <div class="slider-controls">
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous slide">
+            <i class="bi bi-chevron-left"></i>
+        </button>
+
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Next slide">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+
+        <button class="slider-btn slider-pause" id="sliderPause" aria-label="Pause slider">
+            <i class="bi bi-pause-fill"></i>
+        </button>
+    </div>
+
+        <!-- Slide Progress Indicator -->
+        <div class="slider-progress">
+            <div class="progress-bar" id="sliderProgressBar"></div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <i class="bi bi-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Added Our Expertise heading and redesigned grid layout -->
+    <!-- Our Expertise Section - Redesigned Grid -->
+    <section class="expertise-section" id="expertise">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="expertise-header text-center">
+                <h2 class="expertise-main-title">Our Expertise</h2>
+                <p class="expertise-subtitle">Delivering world-class infrastructure solutions across multiple industries</p>
+            </div>
+
+            <!-- Expertise Grid - Card Layout like MasTec -->
+            <div class="expertise-grid">
+                <div class="row g-4">
+                    <!-- Communications -->
+                    <div class="col-lg-8 col-md-6">
+                        <a href="expertise-communications.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://ghd-p-001.sitecorecontenthub.cloud/api/public/content/99b40e7efc1843cdbac086f246625667?v=9483b8e6" alt="Communications">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Construction</h3>
+                                    <p>We provide fast and reliable fiber and tower construction services, including underground/aerial installation, micro-trenching, splicing, testing, and complete network activation with perfect execution and on time delivery</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Energy Transition -->
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-energy.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://www.esri.com/content/dam/esrisites/en-us/industries/2022/telecommunications/assets/overview/industry-telecom-overview-two-thirds.jpg" alt="Energy Transition">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Telecom</h3>
+                                    <p>We deliver strong telecom networks through fiber deployment, broadband expansion, wireless systems, and reliable installation</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- EVi -->
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-evi.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://www.educationly.xyz/wp-content/uploads/2023/11/Civil-Engineering.jpg" alt="EVi">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Engineering</h3>
+                                    <p>Our team handles route planning, field surveys, drawings, CAD drafting, and mapping to ensure every telecom project is accurate, optimized.</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Oil & Gas -->
+                    <div class="col-lg-8 col-md-6">
+                        <a href="expertise-oil-gas.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="Assets\bg1.jpeg" alt="Oil & Gas">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Maintenance</h3>
+                                    <p>We provide continuous 24/7 maintenance support with rapid-response emergency fiber restoration, full pole replacement, underground and aerial route repairs, and comprehensive storm-damage recovery. Our experienced team works with precision to protect live networks, We ensure your infrastructure stays stable, secure, and ready for uninterrupted service.</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Power Generation -->
+                    <div class="col-lg-12 col-md-6">
+                        <a href="expertise-power-generation.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="Assets\bg2.jpeg" alt="Power Generation">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Project Management</h3>
+                                    <p>We manage the full project lifecycle with precise scheduling, seamless coordination, thorough site inspections, efficient material handling, and clear progress reporting. Our team ensures every telecom project moves smoothly, stays on track, and is delivered on time with consistent quality and accountability at every stage</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Power Delivery
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-power-delivery.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Power Delivery">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Power Delivery</h3>
+                                    <p>Transmission and distribution systems</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <!-- Civil & Industrial
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-civil.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="Civil & Industrial">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Civil & Industrial</h3>
+                                    <p>Heavy civil and industrial construction</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <!-- Technology Deployment
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-technology.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&q=80" alt="Technology">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Technology Deployment</h3>
+                                    <p>Smart infrastructure and IoT solutions</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+
+                    <!-- Water & Sewer
+                    <div class="col-lg-4 col-md-6">
+                        <a href="expertise-water.html" class="expertise-card-link">
+                            <div class="expertise-card">
+                                <div class="expertise-card-image">
+                                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=600&q=80" alt="Water & Sewer">
+                                    <div class="expertise-card-overlay"></div>
+                                </div>
+                                <div class="expertise-card-content">
+                                    <h3>Water & Sewer</h3>
+                                    <p>Treatment plants and distribution systems</p>
+                                    <span class="card-arrow"><i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-center mt-5">
+                <a href="expertise.html" class="btn-view-all">
+                    VIEW ALL EXPERTISE
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+
+    <!-- Added Statistics Section -->
+    <!-- Stats Section - NEW -->
+    <!-- <section class="stats-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-calendar-check"></i>
+                        </div>
+                        <div class="stat-number" data-count="35">35+</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <div class="stat-number" data-count="22000">22,000+</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-geo-alt"></i>
+                        </div>
+                        <div class="stat-number" data-count="500">500+</div>
+                        <div class="stat-label">Locations Nationwide</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="bi bi-trophy"></i>
+                        </div>
+                        <div class="stat-number" data-count="10000">10,000+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Completely redesigned Photo Gallery with lightbox -->
+    <!-- Photo Gallery Section - Interactive with Lightbox -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">OUR PORTFOLIO</span>
+                <h2 class="section-title">Featured Project Gallery</h2>
+                <p class="section-subtitle">Explore our portfolio of successful infrastructure projects across the nation</p>
+            </div>
+
+            <!-- Gallery Filter Tabs -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="energy">Construction</button>
+                <button class="filter-btn" data-filter="telecom">Telecom</button>
+                <button class="filter-btn" data-filter="civil">Engineering</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid-container">
+            <div class="container-fluid px-0">
+                <div class="gallery-masonry">
+
+                    <div class="gallery-item large" data-category="energy" data-aos="fade-up">
+                        <img src="Assets/1.jpg" alt="Solar Farm Project">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/1.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="telecom" data-aos="fade-up" data-aos-delay="100">
+                        <img src="Assets/2.jpg" alt="Fiber Network">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/2.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="energy" data-aos="fade-up" data-aos-delay="150">
+                        <img src="Assets/3.jpg" alt="Wind Farm">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/3.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item tall" data-category="civil" data-aos="fade-up" data-aos-delay="200">
+                        <img src="Assets/4.jpg" alt="Transmission Lines">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/4.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="water" data-aos="fade-up" data-aos-delay="250">
+                        <img src="Assets/5.jpg" alt="Water Treatment">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                   <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/5.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+
+                    <div class="gallery-item large" data-category="telecom" data-aos="fade-up" data-aos-delay="350">
+                        <img src="Assets/6.jpg" alt="5G Tower">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/6.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="civil" data-aos="fade-up" data-aos-delay="400">
+                        <img src="Assets/7.jpg" alt="Industrial">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/7.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+<div class="gallery-item" data-category="civil" data-aos="fade-up" data-aos-delay="400">
+    <video src="Assets/Videos/1.mp4" autoplay muted loop playsinline></video>
+    <div class="gallery-item-overlay">
+        <div class="gallery-item-content">
+            <h4>Sample Heading</h4>
+            <p>Sample Matter</p>
+        </div>
+        <button class="gallery-zoom-btn" data-video="Assets/Videos/1.mp4">
+            <i class="bi bi-arrows-fullscreen"></i>
+        </button>
+    </div>
+</div>
+
+<div class="gallery-item" data-category="civil" data-aos="fade-up" data-aos-delay="400">
+    <video src="Assets/Videos/2.mp4" autoplay muted loop playsinline></video>
+    <div class="gallery-item-overlay">
+        <div class="gallery-item-content">
+            <h4>Sample Heading</h4>
+            <p>Sample Matter</p>
+        </div>
+        <button class="gallery-zoom-btn" data-video="Assets/Videos/2.mp4">
+            <i class="bi bi-arrows-fullscreen"></i>
+        </button>
+    </div>
+</div>
+
+
+                                        <div class="gallery-item" data-category="civil" data-aos="fade-up" data-aos-delay="400">
+                        <img src="Assets/10.jpg" alt="Industrial">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/10.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+
+                                        <div class="gallery-item large" data-category="energy" data-aos="fade-up">
+                        <img src="Assets/11.jpg" alt="Solar Farm Project">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/11.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                                                            <div class="gallery-item" data-category="civil" data-aos="fade-up" data-aos-delay="400">
+                        <img src="Assets/10.jpg" alt="Industrial">
+                        <div class="gallery-item-overlay">
+                            <div class="gallery-item-content">
+                                <h4>Sample Heading</h4>
+                                <p>Sample Matter</p>
+                            </div>
+                            <button class="gallery-zoom-btn" data-image="Assets/10.jpg">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="projects.html" class="btn-view-all">
+                VIEW ALL PROJECTS
+                <i class="bi bi-arrow-right ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Gallery Lightbox Modal -->
+    <div class="gallery-lightbox" id="galleryLightbox">
+        <button class="lightbox-close"><i class="bi bi-x-lg"></i></button>
+        <button class="lightbox-prev"><i class="bi bi-chevron-left"></i></button>
+        <button class="lightbox-next"><i class="bi bi-chevron-right"></i></button>
+        <div class="lightbox-content">
+            <img src="/placeholder.svg" alt="Gallery Image" id="lightboxImage">
+        </div>
+    </div>
+
+    <!-- Added Featured News Section -->
+    <!-- Featured News Section -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">LATEST UPDATES</span>
+                <h2 class="section-title">News & Insights</h2>
+                <p class="section-subtitle">Stay informed about our latest projects and company updates</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80" alt="News">
+                            <span class="news-date">Jan 10, 2026</span>
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-category">Energy</span>
+                            <h3><a href="news-detail.html">MAAS 66 Solar Farm Contract</a></h3>
+                            <p>Leading the renewable energy transition with our largest solar installation project to date.</p>
+                            <a href="news-detail.html" class="news-link">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="News">
+                            <span class="news-date">Jan 8, 2026</span>
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-category">Technology</span>
+                            <h3><a href="news-detail.html">Expanding 5G Infrastructure Nationwide</a></h3>
+                            <p>Our telecommunications division continues to lead the 5G revolution across America.</p>
+                            <a href="news-detail.html" class="news-link">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <article class="news-card">
+                        <div class="news-card-image">
+                            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80" alt="News">
+                            <span class="news-date">Jan 5, 2026</span>
+                        </div>
+                        <div class="news-card-content">
+                            <span class="news-category">Company</span>
+                            <h3><a href="news-detail.html">Q4 2025 Results Exceed Expectations</a></h3>
+                            <p>Strong performance across all divisions drives record-breaking quarterly results.</p>
+                            <a href="news-detail.html" class="news-link">Read More <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn-view-all btn-outline">
+                    VIEW ALL NEWS
+                    <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section - Improved -->
+    <section class="clients-section" id="clients">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-label">OUR PARTNERS</span>
+                <h2 class="section-title">Trusted By Industry Leaders</h2>
+                <p class="section-subtitle">Working with the world's leading companies to deliver exceptional infrastructure</p>
+            </div>
+        </div>
+<div class="clients-slider">
+    <div class="clients-track" id="clientsTrack">
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Nokia_wordmark.svg/500px-Nokia_wordmark.svg.png" alt="Nokia" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Ericsson_logo.svg/1280px-Ericsson_logo.svg.png" alt="Ericsson" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Samsung_old_logo_before_year_2015.svg/1280px-Samsung_old_logo_before_year_2015.svg.png" alt="Samsung" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/American_Tower_Corporation_logo.svg/500px-American_Tower_Corporation_logo.svg.png" alt="American Tower" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/SBA_Communications_Logo.svg/330px-SBA_Communications_Logo.svg.png" alt="SBA Communications" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5d/Crown_Castle_Logo.svg" alt="Crown Castle" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/T-Mobile_US_Logo_2022_RGB_Magenta_on_Transparent.svg/1280px-T-Mobile_US_Logo_2022_RGB_Magenta_on_Transparent.svg.png" alt="T-Mobile" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Verizon_Communications_Logo_2015.jpg" alt="Verizon" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://media.licdn.com/dms/image/v2/D4D22AQEgrgoPKbmHOw/feedshare-shrink_800/feedshare-shrink_800/0/1725524169761?e=1769644800&v=beta&t=TFCXdBDIUmEgB5daktFl0zXbwjN3WrG7p9_3SimGyWs" alt="FiberLight" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://fastbridgefiber.com/wp-content/uploads/2021/11/Fastbridge-Logo-Color.png" alt="FastBridge Fiber" class="client-logo">
+        </div>
+
+        <div class="client-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/AT%26T_logo_2016.svg/1280px-AT%26T_logo_2016.svg.png" alt="AT&T" class="client-logo">
+        </div>
+
+    </div>
+</div>
+
+
+    </section>
+
+    <!-- Safety Section - Enhanced -->
+    <section class="safety-section" id="safety">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="safety-content">
+                        <span class="safety-label">SAFETY FIRST</span>
+                        <h2 class="safety-title">Our Safety Culture</h2>
+                        <p class="safety-desc">At MAAS 66, safety isn't just a priority – it's a core value. We maintain rigorous safety standards across all our projects, ensuring the wellbeing of our team members and the communities we serve.</p>
+                        <div class="safety-stats">
+                            <div class="safety-stat">
+                                <span class="safety-stat-number">99.8%</span>
+                                <span class="safety-stat-label">Safety Rating</span>
+                            </div>
+                            <div class="safety-stat">
+                                <span class="safety-stat-number">500+</span>
+                                <span class="safety-stat-label">Safety Officers</span>
+                            </div>
+                        </div>
+                        <a href="safety.html" class="btn-safety">
+                            Our Safety Culture
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="safety-image">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80" alt="Safety">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Added CTA Section -->
+
+    <!-- Footer - Matching the design -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Logo and Tagline -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="footer-brand">
+                            <span class="footer-logo">
+                                 <img src="Assets\Logo.png" alt="MAAS 66 Logo" class="footer-logo-img" style="padding-right: 70px;" width="200px" height="200px">
+
+                            </span>
+                            <h1 style="color: white; padding-left: 20px;">Maas <span style="color: rgb(1, 83, 184);">66</span></h1>
+                        </div>
+                    </div>
+
+                    <!-- Expertise Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">EXPERTISE</h4>
+                        <ul class="footer-links">
+                            <li><a href="construction.html">Construction</a></li>
+                            <li><a href="telecom.html">Telecom</a></li>
+                            <li><a href="engineering.html">Engineering</a></li>
+                            <li><a href="maintenance.html">Maintenance</a></li>
+                            <li><a href="project-management.html">Project Management</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Company Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">COMPANY</h4>
+                        <ul class="footer-links">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="about.html#leadership">Leadership</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="investors.html">Investor Relations</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Responsibility Links -->
+                    <div class="col-lg-2 col-md-6 mb-4">
+                        <h4 class="footer-title">RESPONSIBILITY</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Safety</a></li>
+                            <li><a href="#">Governance</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscribe -->
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <h4 class="footer-title">SUBSCRIBE</h4>
+                        <form class="subscribe-form">
+                            <div class="input-group">
+                                <input type="email" class="form-control" placeholder="Your email">
+                                <button type="submit" class="btn btn-subscribe">GO</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">&copy; 2026 Maas 66, Inc. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="footer-legal">
+                            <li><a href="privacy.html">Privacy Policy</a></li>
+                            <li><a href="terms.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
+    <!-- Stats Section
+    <section class="content-section bg-primary-blue text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h2 class="display-4 fw-bold">25+</h2>
+                    <p class="mb-0">Years of Experience</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h2 class="display-4 fw-bold">5000+</h2>
+                    <p class="mb-0">Projects Completed</p>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                    <h2 class="display-4 fw-bold">10K+</h2>
+                    <p class="mb-0">Team Members</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h2 class="display-4 fw-bold">50</h2>
+                    <p class="mb-0">States Served</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
