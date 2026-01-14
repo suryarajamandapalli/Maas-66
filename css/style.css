@@ -64,7 +64,12 @@ img {
 .navbar.scrolled {
   background: var(--primary-dark);
   padding: 0.5rem 0;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+/* From https://css.glass */
+background: rgba(1, 48, 88, 0.641);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10px);
+-webkit-backdrop-filter: blur(5px);
+border-bottom: 2px solid rgb(1, 84, 184);
 }
 
 .navbar-brand {
@@ -75,7 +80,6 @@ img {
 .logo-text {
   display: flex;
   align-items: baseline;
-  gap: 0.25rem;
   padding-left: 50px;
 }
 
@@ -571,7 +575,7 @@ img {
 }
 
 .btn-learn-more:hover {
-  background: var(--primary-dark);
+  background: var(--accent-blue);
   transform: translateY(-2px);
 }
 
@@ -854,7 +858,7 @@ opacity: 0;
 
 .expertise-card-content {
   padding: 1.5rem;
-  background: var(--primary-dark);
+  background: rgb(0, 50, 111);
   position: relative;
 }
 
@@ -1554,11 +1558,11 @@ opacity: 0;
 }
 
 .footer-top {
-  padding: 4rem 0 3rem;
+  padding: 2.5rem 0 0;
 }
 
 .footer-brand {
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 
 .footer-logo {
@@ -1599,7 +1603,7 @@ opacity: 0;
 }
 
 .footer-links li {
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
   color: red;
 }
 
@@ -1688,7 +1692,7 @@ opacity: 0;
    ============================================ */
 @media (max-width: 1200px) {
   .navbar-nav .nav-link {
-    padding: 0.75rem 0.75rem;
+    padding: 0.35rem 0.75rem;
     font-size: 0.8rem;
   }
 
